@@ -5,12 +5,21 @@
   "main": "index.js",
   "scripts": {
     "dev": "",
-    "start": ""
+    "start": "",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
     "standard": "^16.0.3"
   }
 }
